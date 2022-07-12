@@ -124,7 +124,7 @@
 
 //FOR LOOPS
 
-const fruits =['banana', 'apple', 'orange','pears','blueberry']
+// const fruits =['banana', 'apple', 'orange','pears','blueberry']
 
 // for(let i=0;i<fruits.length;i++){
 //   console.log(fruits[i])
@@ -134,7 +134,7 @@ const fruits =['banana', 'apple', 'orange','pears','blueberry']
 //     console.log(fruit)
 // }
 
-const numbers =[1,2,3,4,5,6]
+// const numbers =[1,2,3,4,5,6]
 
 // for(const number of numbers){
 //   console.log(doubleNumber)
@@ -178,13 +178,125 @@ const numbers =[1,2,3,4,5,6]
 
 // console.log(square());
 
-const myFriends= [ 'Shreya','Monish','Himanshu','Krishna','Nuggu']
-const people=[]
-for( const friend of myFriends){
-  if(friend.length<=6)
-   people.push(friend)
+//FOR OF LOOP
+
+// const myFriends= [ 'Shreya','Monish','Himanshu','Krishna','Nuggu']
+// const people=[]
+// for( const friend of myFriends){
+//   if(friend.length<=6)
+//    people.push(friend)
   
-}
-console.log(people)
+// }
+// console.log(people)
 
 // console.log("people are"+ people.push(friend))
+
+//FOR OF LOOP : Gives the values of objects
+// const phrase = ' hey, how are you doing? What are your plans for the days'
+// const howManyLetters = (phrase)=>{
+  
+//   const values = []
+//    for( const index of phrase){
+//     values.push(index)
+//      }
+//   console.log(values)
+// }
+
+// howManyLetters(phrase);
+
+// //FOR IN LOOP : Gives the Index of an object
+// const howManyLetters2 = (phrase)=>{
+//   // const phrase = ' hey, how are you doing? What are your plans for the days'
+//   let result = 0;
+//   for( const index in phrase){
+//      result = Number(index)+1;
+//   }
+  
+//   console.log( `There are total of ${result} alpabhet`)
+//   return {result}
+// }
+
+// console.log(howManyLetters2(phrase));
+
+/**
+ * Q. Write a function to find number of words in phrase
+ * Q. Write  a function to retrive the words in phrase and put it in an array.
+ */
+
+// const phrase = 'Sun Rises in the East!'
+// const result=[]  
+// const findNumberOfWords = (phrase) =>{
+//   for( word in phrase){
+//     value = Number(word)+1
+//    }
+//    console.log(`There are ${value} alpabhets in this phrase`)
+//    return {value}
+// }
+// console.log(findNumberOfWords(phrase))
+
+// const findNumberOfWords2 = (phrase) =>{
+  
+//    console.log(`There are ${phrase.length} alpabhets in this phrase`)
+  
+// }
+// findNumberOfWords2(phrase)
+
+// const getTheWords = (phrase)=>{
+//   for( word of phrase){
+//     result.push(word)
+//   }
+//   console.log(result)
+// }
+// getTheWords(phrase)
+
+/**
+ * @ Sum up all the numbers in an array
+ */
+
+// const values2 = [4,5,7,4,8,9,2,4,6,7,9]
+// // const values2 = [4,3]
+// const sumAllArray = (values2)=>{
+//   let result = 0;
+//   for(mango of values2){
+//     console.log("Adding number : "+mango)
+//      result = mango+result
+//      console.log(result)
+//   }
+//   return {result}
+// }
+// console.log(sumAllArray(values2))
+
+/**
+ * LOOP OF and LOOP IN
+ * FOR IN LOOP : Gives the Index of an object
+ * FOR OF LOOP : Gives the values of objects
+ */
+
+// const numArray = [2,3,4]
+// const addFunction = (numArray) =>{
+//   let result = 0;
+//   let nayaArray=[]
+//   for(let num of numArray ){
+//     result=num+result;
+//     nayaArray.push(result)
+//     }
+//   console.log(nayaArray)
+//   return {result}
+// }
+// console.log(addFunction(numArray))
+
+const numbers = [1,4,5]
+const findMax = (numbers)=>{
+  const result = 0;
+  for(let i in numbers.length){
+  for(number of numbers){
+    if(numbers[i]<numbers[i++]){
+      cons
+      result=number;
+    }
+  }
+}
+  return {result}
+
+}
+console.log(findMax(numbers))
