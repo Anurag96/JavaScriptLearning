@@ -285,18 +285,127 @@
 // }
 // console.log(addFunction(numArray))
 
-const numbers = [1,4,5]
-const findMax = (numbers)=>{
-  const result = 0;
-  for(let i in numbers.length){
-  for(number of numbers){
-    if(numbers[i]<numbers[i++]){
-      cons
-      result=number;
-    }
+// const numbers = [1,4,5]
+// const findMax = (numbers)=>{
+//   let result = numbers[0];
+//   for(const number of numbers){
+//     if(number>result){
+//       result=number
+//     }
+//   }
+ 
+//   return {result}
+
+// }
+// console.log(findMax(numbers))
+
+// const numArray = [8,6,5,7,3,24,4,20]
+
+// const findTheBiggest = (numArray)=>{
+
+//   let result=numArray[0];
+//   for(const number of numArray){
+//     if(number>result){
+//       result=number
+//     }
+//   }
+//   return {result}
+// }
+
+// console.log(findTheBiggest(numArray))
+
+
+
+
+// IF-ELSE : if(letter in myValue) checks true/false
+
+// const phrase = 'what are you doing later tonight'
+
+// const letterFrequency = (phrase)=>{
+  
+// let frequency={}
+// // console.log(frequency) 
+// for(letter of phrase){
+   
+//   if(letter in frequency){
+//     // console.log(`${letter} and ${frequency[letter]}`) 
+
+//     frequency[letter]+=1
+
+//     // console.log(`${letter} and ${frequency[letter]}`) 
+//    }else{
+//     frequency[letter]=1;
+//    }
+
+// }
+// return {frequency}
+// }
+// console.log(letterFrequency(phrase))
+
+// const phrase = 'How are you doing, hows your life going on'
+
+// const wordFrequency = (phrase)=>{
+
+//   let frequency={}
+//   for(const letter of phrase){
+
+//     if(letter in frequency){
+//       frequency[letter]+=1;
+//     }else{
+//       frequency[letter]='hello';
+//     }
+
+//   }
+//   return frequency
+// }
+
+// console.log(wordFrequency(phrase))
+
+/**
+ * Q. How to count get each alpabet frequency
+ */
+// const phras = 'How are you doing, hows your life going on'
+
+const addValue = (phras)=>
+{
+  let myValue = {}
+for(letter of phras){
+  if(letter in myValue){
+
+    myValue[letter] +=1
+  }else{
+
+    myValue[letter] =1
   }
 }
-  return {result}
-
+return console.log(myValue);
 }
-console.log(findMax(numbers))
+// console.log(addValue(phras))
+
+/**
+ * Q. How to count get each alpabet frequency
+ */
+let arrayNumbers ='how how are you doing and how is your life doing are you ?'
+// let numbers=arrayNumbers.split(" ")
+// console.log(numbers)
+// let frequency ={}
+// const mostFrequent = (numbers) =>{
+//   for(const number of numbers){
+//     if(number in frequency){
+//       frequency[number]+=1;
+//     }else{
+//       frequency[number]=1;
+//     }
+
+//   }
+//   return frequency
+// }
+// console.log(mostFrequent(numbers))
+
+
+const mostFrequent = (arrayNumbers) =>{
+  const words=arrayNumbers.split(" ")
+  return addValue(words)
+ 
+}
+mostFrequent(arrayNumbers)
