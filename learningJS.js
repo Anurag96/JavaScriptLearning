@@ -366,26 +366,26 @@
  */
 // const phras = 'How are you doing, hows your life going on'
 
-const addValue = (phras)=>
-{
-  let myValue = {}
-for(letter of phras){
-  if(letter in myValue){
+// const addValue = (phras)=>
+// {
+//   let myValue = {}
+// for(letter of phras){
+//   if(letter in myValue){
 
-    myValue[letter] +=1
-  }else{
+//     myValue[letter] +=1
+//   }else{
 
-    myValue[letter] =1
-  }
-}
-return console.log(myValue);
-}
+//     myValue[letter] =1
+//   }
+// }
+// return console.log(myValue);
+// }
 // console.log(addValue(phras))
 
 /**
  * Q. How to count get each alpabet frequency
  */
-let arrayNumbers ='how how are you doing and how is your life doing are you ?'
+// let arrayNumbers ='how how are you doing and how is your life doing are you ?'
 // let numbers=arrayNumbers.split(" ")
 // console.log(numbers)
 // let frequency ={}
@@ -403,9 +403,226 @@ let arrayNumbers ='how how are you doing and how is your life doing are you ?'
 // console.log(mostFrequent(numbers))
 
 
-const mostFrequent = (arrayNumbers) =>{
-  const words=arrayNumbers.split(" ")
-  return addValue(words)
+// const mostFrequent = (arrayNumbers) =>{
+//   const words=arrayNumbers.split(" ")
+//   return addValue(words)
  
+// }
+// mostFrequent(arrayNumbers)
+
+/**
+ * Q. WRITE A PROGRAM TO FIND FREQUENCY OF EACH ALPHABET & EACH WORD IN A SENTENCE?  
+ */
+// const phrase = 'how are you doing ? and what are you doing ? and why are you doing ?'
+// console.log(`Phrase : ${phrase}`)
+// const phraseArray = phrase.split(' ')
+// // console.log(phraseArray)
+// // let frequencyOfAlphabet = {}
+// const getFreqOfAlpabets=(phrase)=>{
+//   let frequencyOfAlphabet = {}
+//   for(let letter of phrase){
+//     if(letter in frequencyOfAlphabet){
+//       frequencyOfAlphabet[letter]+=1;
+//     }else{
+//       frequencyOfAlphabet[letter]=1;
+//     }
+//   }
+//   return {frequencyOfAlphabet}
+// }
+
+// const getFreqOfWords =(phraseArray)=>{
+//   let frequencyOfWord ={}
+//   for(word of phraseArray){
+//   if(word in frequencyOfWord){
+//      frequencyOfWord[word]+=1;
+//   }else{
+//     frequencyOfWord[word]=1;
+//   }
+//  }
+//  return {frequencyOfWord}
+// }
+
+// console.log(getFreqOfAlpabets(phrase))
+// console.log(getFreqOfWords(phraseArray))
+
+
+/**
+ * Q. Find the length of every word in a phrase
+ */
+
+// const phrase = 'What is the name of the hiring manager in your company'
+// const phraseArray = phrase.split(' ')
+// const lengthOfWord = (phraseArray)=>{
+//   let result = {}
+//   for(const word of phraseArray){
+//    result['word']=word.length
+//     return {result}
+// }
+// }
+// console.log((lengthOfWord(phraseArray))
+
+/**
+ * ARRAY METHODS
+ * => HIGHER ORDER FUNCTION
+ * => MAP()
+ * => FILTER()
+ * => REDUCE() 
+ * Above there are callback functions
+ */
+
+//MAP : It loops and always return new array.
+
+// const arrayObject = [1,3,5,6].map(number=>number*2)
+// console.log(arrayObject)
+
+/**
+ * Q. Wrute a function to print double of a given array without for loop?
+ */
+// const arrayObject = [1,3,5,6]
+// console.log(arrayObject)
+// const doubleArray = (arrayObject)=>{
+//    return arrayObject.map((number)=>number*2)
+
+// }
+// console.log(doubleArray(arrayObject))
+
+//Filter is a callback function, which returns new array with matching condition
+
+// const greaterThen3 = (arrayObject)=>{
+//     return arrayObject.filter((number)=>number<3)
+// }
+// console.log(greaterThen3(arrayObject))
+
+// const divisibleByTwo = (arrayObject)=>{
+//     return arrayObject.filter((number)=>{
+//     let result = (number%2)==0 || (number%3)==0? number : 0 //'ternary' or 'conditional' operator & OR operator
+//     console.log(result)
+//         return result 
+//     })
+// }
+// console.log(divisibleByTwo(arrayObject))
+
+// .REDUCED() : Reduced is a callback function, which is used to sum of the net worths
+// SUM : Think Reduce
+// Reduce the loop and gives you back the accumulator
+/**
+ * array.reduce(function(total, currentValue), initialValue)
+ * The reduce() method executes a reducer function for array element.
+ * The reduce() method returns a single value: the function's accumulated result.
+ * The reduce() method does not execute the function for empty array elements.
+ * The reduce() method does not change the original array.
+ */
+/**
+ * @ Sum up all the numbers in an array with Reduce
+ */
+
+// const values2 = [4,5,7,4,8,9,2,4,6,7,9]
+
+// const sumAllArray = (values2)=>{
+//     let result
+//     values2.reduce((prev,curr)=>
+//     {  
+//         //  console.log(`${prev} ${curr}`)
+//         result = prev +curr
+//         console.log(`Previous value : ${prev} & Current Value to be added:${curr}`)
+//         return result})
+//         console.log(`${result}`)
+// }
+// sumAllArray(values2)
+
+// const values2 = [4,5,7,4,8,9,2,4,6,7,9]
+
+// const sumAllArray = (values2)=>{
+//     let result = 0;
+//     let prev = 0;
+//     values2.reduce((Total,curr)=>
+//     {      
+//         result = Total +curr
+//         console.log(`Current Total : ${Total} || Current Value to be added:${curr}`)
+//         return result
+//     },prev)//This 0 is initialValue
+//         console.log(`The sum of all array value : ${result}`)
+// }
+// sumAllArray(values2)
+
+ 
+/**
+ * Q. FInd the sum of every element in array without for loop
+ *  */
+
+// const numberArray = [3,5,7,8,9,2,45,7,7]
+
+// const summNumberArray = (numberArray)=>{
+//     let prev = 0;
+//     let total = 0 ;
+//     numberArray.reduce((prev,curr)=>{
+//         console.log(`Current Total : ${prev} || Current Value to be added:${curr}`)
+//         total = prev+curr;
+//         return total
+//     },total)
+//     console.log(`Sum of all array is ${total}`)
+    
+// }
+
+// summNumberArray(numberArray)
+
+
+/**
+ * Q. FInd the multiples of every element in array without for loop
+ *  */
+
+// const arrayMul = [1,2,3,5]
+// const arryMulFunc = (arrayMul) =>{
+//         let total = 0
+//         let prev = 0
+//         arrayMul.reduce((total,curr)=>{
+//             prev = curr+total;
+//             return prev;
+//         }, prev)
+//         console.log(`sum of all the element in array is ${prev}`)
+//     }
+//     arryMulFunc(arrayMul)
+
+const actors = [
+    {name:'jonny deep',networth:'300'},
+    {name:'Amber',networth:'100'},
+   {name: 'Brad', networth: '200'}
+]
+
+   const totalAsset = (actors)=>{
+
+
+        /**
+         * Filters Help you give a new array with conditions, Map simples gives new array
+         */
+
+        let result = actors.filter((actor => actor.networth>100))
+        let netWorths = result.map((actor)=>actor.networth)
+        console.log(`List of all netWorths : ${netWorths}`)
+
+        /**
+         * For of loops through item, For in loops through item index in array
+         */
+        
+        let namearray = []
+        for(actor of actors){
+            namearray.push(actor.name)
+           }
+           console.log(`List of Name of actors : ${namearray}`)
+       
+        /**
+         *  Reduce gives back an sum of all numbers in array, with help of (prev,curr,total)
+         */
+
+        let total = 0 ;
+        let prev = 0 ;
+        let resultTotal = 0;
+        resultTotal = actors.reduce((prev,curr)=>{
+            total = prev +Number(curr.networth);
+            return total
+        },prev)
+        console.log(`The sum of all netWorths : ${resultTotal}`)
+
 }
-mostFrequent(arrayNumbers)
+
+totalAsset(actors)
