@@ -15,6 +15,8 @@
 // // console.log("your food is "+total+" Tip Amount"+tipAmount)
 // console.log(`your food is ${total} and Tip Amount is ${tipAmount}`)
 
+// ****************************************************
+
 //DATATYPE
 // Only use let & const
 
@@ -28,6 +30,7 @@
 //   console.log("Let's wear an SunGlasses")
 // }
 
+// ****************************************************
 
 //FUNCTION
 // function sayMyName(){
@@ -36,6 +39,8 @@
 //   console.log('Singh')
 // }
 // sayMyName()
+
+// ****************************************************
 
 //TEMPLATE LITERALS
 // function greeting(name){
@@ -54,6 +59,8 @@
 //   return total
 // }
 
+// ****************************************************
+
 //ARROW FUNCTION
 // const tipCalculator = (food,tipPercentage)=>{
 //    const tipPercentageAmount = tipPercentage / 100;
@@ -63,6 +70,8 @@
 // }
 
 //  console.log(tipCalculator(100,20))
+
+// ****************************************************
 
 //ARRAY
 
@@ -81,6 +90,8 @@
 // console.log(groceries.length)
 // console.log('--indexOf--')
 // console.log(groceries.indexOf('blueberry'))
+
+// ****************************************************
 
 //OBJECT{} : Objects are a type of varaible, quite similar to arrays, but they have key-pair value.
 
@@ -122,6 +133,8 @@
 // }
 // console.log(introducer('black','Anurag',10000,400))
 
+// ****************************************************
+
 //FOR LOOPS
 
 // const fruits =['banana', 'apple', 'orange','pears','blueberry']
@@ -157,11 +170,8 @@
 //     let doubleNumber = number*2;
 //     result.push(doubleNumber)
 //   }
-  
 //   return result;
-
 // }
-
 // console.log(double());
 
 
@@ -171,12 +181,11 @@
 //     let squareNumber = number**2;
 //     result.push(squareNumber)
 //   }
-  
 //   return result;
-
 // }
-
 // console.log(square());
+
+// ****************************************************
 
 //FOR OF LOOP
 
@@ -266,6 +275,8 @@
 // }
 // console.log(sumAllArray(values2))
 
+// ****************************************************
+
 /**
  * LOOP OF and LOOP IN
  * FOR IN LOOP : Gives the Index of an object
@@ -314,8 +325,7 @@
 
 // console.log(findTheBiggest(numArray))
 
-
-
+// ****************************************************
 
 // IF-ELSE : if(letter in myValue) checks true/false
 
@@ -330,11 +340,11 @@
 //   if(letter in frequency){
 //     // console.log(`${letter} and ${frequency[letter]}`) 
 
-//     frequency[letter]+=1
+//     frequency[letter]=frequency[letter]+1 //in 1st loop,frequency[letter]=0;in 2nd loop,frequency[letter]=1;
 
 //     // console.log(`${letter} and ${frequency[letter]}`) 
 //    }else{
-//     frequency[letter]=1;
+//     frequency[letter]=1; //h:1
 //    }
 
 // }
@@ -382,33 +392,6 @@
 // }
 // console.log(addValue(phras))
 
-/**
- * Q. How to count get each alpabet frequency
- */
-// let arrayNumbers ='how how are you doing and how is your life doing are you ?'
-// let numbers=arrayNumbers.split(" ")
-// console.log(numbers)
-// let frequency ={}
-// const mostFrequent = (numbers) =>{
-//   for(const number of numbers){
-//     if(number in frequency){
-//       frequency[number]+=1;
-//     }else{
-//       frequency[number]=1;
-//     }
-
-//   }
-//   return frequency
-// }
-// console.log(mostFrequent(numbers))
-
-
-// const mostFrequent = (arrayNumbers) =>{
-//   const words=arrayNumbers.split(" ")
-//   return addValue(words)
- 
-// }
-// mostFrequent(arrayNumbers)
 
 /**
  * Q. WRITE A PROGRAM TO FIND FREQUENCY OF EACH ALPHABET & EACH WORD IN A SENTENCE?  
@@ -418,6 +401,7 @@
 // const phraseArray = phrase.split(' ')
 // // console.log(phraseArray)
 // // let frequencyOfAlphabet = {}
+
 // const getFreqOfAlpabets=(phrase)=>{
 //   let frequencyOfAlphabet = {}
 //   for(let letter of phrase){
@@ -461,22 +445,29 @@
 // }
 // console.log((lengthOfWord(phraseArray))
 
+// ****************************************************
+
+
 /**
  * ARRAY METHODS
- * => HIGHER ORDER FUNCTION
+ * => HIGHER ORDER FUNCTION : Functions that takes other function inside
  * => MAP()
  * => FILTER()
  * => REDUCE() 
  * Above there are callback functions
  */
 
-//MAP : It loops and always return new array.
+
+// ****************************************************
+
+
+//MAP() : Map loops and always return new array.
 
 // const arrayObject = [1,3,5,6].map(number=>number*2)
 // console.log(arrayObject)
 
 /**
- * Q. Wrute a function to print double of a given array without for loop?
+ * Q. Write a function to print double of a given array without for loop?
  */
 // const arrayObject = [1,3,5,6]
 // console.log(arrayObject)
@@ -486,7 +477,11 @@
 // }
 // console.log(doubleArray(arrayObject))
 
-//Filter is a callback function, which returns new array with matching condition
+
+// ****************************************************
+
+
+//FILTER() : Filter is a callback function, which returns new array with matching condition
 
 // const greaterThen3 = (arrayObject)=>{
 //     return arrayObject.filter((number)=>number<3)
@@ -495,12 +490,14 @@
 
 // const divisibleByTwo = (arrayObject)=>{
 //     return arrayObject.filter((number)=>{
-//     let result = (number%2)==0 || (number%3)==0? number : 0 //'ternary' or 'conditional' operator & OR operator
+//     let result = (number%2)==0 ? number : 0 //'ternary' or 'conditional' operator & OR operator
 //     console.log(result)
 //         return result 
 //     })
 // }
 // console.log(divisibleByTwo(arrayObject))
+
+// ****************************************************
 
 // .REDUCED() : Reduced is a callback function, which is used to sum of the net worths
 // SUM : Think Reduce
@@ -512,42 +509,10 @@
  * The reduce() method does not execute the function for empty array elements.
  * The reduce() method does not change the original array.
  */
-/**
- * @ Sum up all the numbers in an array with Reduce
- */
-
-// const values2 = [4,5,7,4,8,9,2,4,6,7,9]
-
-// const sumAllArray = (values2)=>{
-//     let result
-//     values2.reduce((prev,curr)=>
-//     {  
-//         //  console.log(`${prev} ${curr}`)
-//         result = prev +curr
-//         console.log(`Previous value : ${prev} & Current Value to be added:${curr}`)
-//         return result})
-//         console.log(`${result}`)
-// }
-// sumAllArray(values2)
-
-// const values2 = [4,5,7,4,8,9,2,4,6,7,9]
-
-// const sumAllArray = (values2)=>{
-//     let result = 0;
-//     let prev = 0;
-//     values2.reduce((Total,curr)=>
-//     {      
-//         result = Total +curr
-//         console.log(`Current Total : ${Total} || Current Value to be added:${curr}`)
-//         return result
-//     },prev)//This 0 is initialValue
-//         console.log(`The sum of all array value : ${result}`)
-// }
-// sumAllArray(values2)
 
  
 /**
- * Q. FInd the sum of every element in array without for loop
+ * Q. Find the sum of every element in array without for loop
  *  */
 
 // const numberArray = [3,5,7,8,9,2,45,7,7]
@@ -568,7 +533,7 @@
 
 
 /**
- * Q. FInd the multiples of every element in array without for loop
+ * Q. Find the multiples of every element in array without for loop
  *  */
 
 // const arrayMul = [1,2,3,5]
@@ -583,46 +548,58 @@
 //     }
 //     arryMulFunc(arrayMul)
 
-const actors = [
-    {name:'jonny deep',networth:'300'},
-    {name:'Amber',networth:'100'},
-   {name: 'Brad', networth: '200'}
-]
+/**
+ * Q. Wrtite a program : 
+ * 1. To fetch From an actors JSON object
+ * 2. Names of actors using For of loop in an array
+ * 3. Find actors, whos nethworth more then 10000, using filter () & push to new array using Map()
+ * 4. Sum of networth => reduce() 
+ */
+// const actors = [
+//     {name:'jonny deep',networth:'300'},
+//     {name:'Amber',networth:'100'},
+//    {name: 'Brad', networth: '200'}
+// ]
 
-   const totalAsset = (actors)=>{
+//    const totalAsset = (actors)=>{
 
 
-        /**
-         * Filters Help you give a new array with conditions, Map simples gives new array
-         */
+//         /**
+//          * Filters Help you give a new array with conditions, Map simples gives new array
+//          */
 
-        let result = actors.filter((actor => actor.networth>100))
-        let netWorths = result.map((actor)=>actor.networth)
-        console.log(`List of all netWorths : ${netWorths}`)
+//         let result = actors.filter((actor => actor.networth>100))
+//         let netWorths = result.map((actor)=>actor.networth)
+//         console.log(`List of all netWorths : ${netWorths}`)
 
-        /**
-         * For of loops through item, For in loops through item index in array
-         */
+//         /**
+//          * For of loops through item, For in loops through item index in array
+//          */
         
-        let namearray = []
-        for(actor of actors){
-            namearray.push(actor.name)
-           }
-           console.log(`List of Name of actors : ${namearray}`)
+//         let namearray = []
+//         for(actor of actors){
+//             namearray.push(actor.name)
+//            }
+//            console.log(`List of Name of actors : ${namearray}`)
        
-        /**
-         *  Reduce gives back an sum of all numbers in array, with help of (prev,curr,total)
-         */
+//         /**
+//          *  Reduce gives back an sum of all numbers in array, with help of (prev,curr,total)
+//          */
 
-        let total = 0 ;
-        let prev = 0 ;
-        let resultTotal = 0;
-        resultTotal = actors.reduce((prev,curr)=>{
-            total = prev +Number(curr.networth);
-            return total
-        },prev)
-        console.log(`The sum of all netWorths : ${resultTotal}`)
+//         let total = 0 ;
+//         let prev = 0 ;
+//         let resultTotal = 0;
+//         resultTotal = actors.reduce((prev,curr)=>{
+//             total = prev +Number(curr.networth);
+//             return total
+//         },prev)
+//         console.log(`The sum of all netWorths : ${resultTotal}`)
 
-}
+// }
 
-totalAsset(actors)
+// totalAsset(actors)
+
+
+// ****************************************************
+
+//DOM MANIPULATION
