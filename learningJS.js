@@ -19,6 +19,48 @@
 
 //DATATYPE
 // Only use let & const
+/**
+  * Var can be updated and re-declared
+  * let can be updated but not re-declared
+  * const can neither be updated or re-declared
+  * var is initialized with undefined, whereas let & const aren't initialized
+  * const must be initialized during declaration unlike let and var
+  **/
+/*
+console.log('JavScript : Var : They are globally scoped')
+
+var a = 'Anurag';
+var b = 'Harry';
+{
+  var a= 2;
+  var b=3;
+console.log(`${a} and ${b}`)
+}
+
+console.log(`${a} and ${b}`)
+
+console.log('-------------')
+console.log('JavScript : let : They are block scoped')
+let c = 'Anurag';
+let d = 'Harry';
+{
+  let c= 2;
+  let d=3;
+console.log(`${c} and ${d}`)
+}
+
+console.log(`${c} and ${d}`)
+
+console.log('-------------')
+console.log('JavScript : const : They are block scoped')
+const e ='Anurag'
+{
+  const e=3
+ console.log(e) 
+}
+console.log(e)
+*/
+
 
 //IF & ELSE CONDITION
 // let weather= prompt('hows the weather')
@@ -135,7 +177,7 @@
 
 // ****************************************************
 
-//FOR LOOPS
+//GENERAL FOR LOOPS 
 
 // const fruits =['banana', 'apple', 'orange','pears','blueberry']
 
@@ -143,6 +185,7 @@
 //   console.log(fruits[i])
 // }
 
+//FOR OF LOOPS
 // for(const fruit of fruits){
 //     console.log(fruit)
 // }
