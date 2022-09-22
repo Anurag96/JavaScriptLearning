@@ -686,3 +686,25 @@ switch(true){
 ```
 
 ## DOM MANIPULATION
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+## Reference
+* CleverProgramming
+* HarryBhai Tutorial
