@@ -61,8 +61,14 @@ const e ='Anurag'
 console.log(e)
 */
 
+//NOTE : 7 types of PRIMITIVE DATATYPE (NN BB SS U)
+// Null, Number, String, Boolean, Undefined, BIGINT, Symbol
 
-//IF & ELSE CONDITION
+// Object is an NON-PRIMITIVE DATATYPE 
+
+//CONDITIONAL STATEMENTS
+
+//IF & ELSE CONDITION & SWITCH
 // let weather= prompt('hows the weather')
 // if(weather == 'rainy')
 // {
@@ -71,6 +77,37 @@ console.log(e)
 // else{
 //   console.log("Let's wear an SunGlasses")
 // }
+
+/*
+let value = prompt(`What's your age?`)
+let reply = Number(value)
+// console.log(typeof reply)
+if(reply<0){
+  console.log(`Invalid Number`)
+}else if(reply >0 && reply <9 ){
+  console.log(`You're still younger to drive`)
+}else if(reply>9 && reply<18){
+  console.log(`You should consider learning driving`)
+}else{
+  console.log(`You are of age to drive the vehicle`)
+}
+
+switch(true){
+  case (reply < 0) :
+    console.log(`You are not born yet `)
+    break;
+  case reply>0 && reply<9 :
+    console.log(`You are studing school `)
+    break;
+  case reply>9 && reply<18 :
+    console.log(`You are studing High school `)
+    break;
+  default: console.log(`You are studing college or doing job `)
+    break;
+}
+*/
+
+
 
 // ****************************************************
 
